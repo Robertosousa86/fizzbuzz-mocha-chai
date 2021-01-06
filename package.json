@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Robertosousa86/fizzbuzzm-mocha-chai.git"
   },
-  "keywords": [],
+  "keywords": ["mocha", "chai", "babel", "transpiler"],
   "author": "Roberto Sousa <robertosousa186@gmail.com>",
   "license": "MIT",
   "bugs": {
