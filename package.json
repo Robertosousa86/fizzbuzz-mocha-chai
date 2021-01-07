@@ -4,13 +4,24 @@
   "description": "- Um simles código fizzbuzz utilizando TDD com mocha e chai.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require @babel/register"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require @babel/register",
+    "test:coverage": "nyc npm test"
   },
+  "nyc": {
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Robertosousa86/fizzbuzzm-mocha-chai.git"
   },
-  "keywords": ["mocha", "chai", "babel", "transpiler"],
+  "keywords": [
+    "mocha",
+    "chai",
+    "babel",
+    "transpiler"
+  ],
   "author": "Roberto Sousa <robertosousa186@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -26,6 +37,7 @@
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@babel/register": "^7.12.10"
+    "@babel/register": "^7.12.10",
+    "nyc": "^15.1.0"
   }
 }
